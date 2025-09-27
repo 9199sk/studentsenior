@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* In your index.css or global.css file */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0); /* Slide up 40px */
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Optional: Define utility classes using the animation */
+.animate-fadeInUp-1 {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeInUp-2 {
+  animation: fadeInUp 0.8s ease-out forwards 0.2s; /* Add a 0.2s delay */
+}
+
+.animate-fadeInUp-3 {
+  animation: fadeInUp 0.8s ease-out forwards 0.4s; /* Add a 0.4s delay */
+}
