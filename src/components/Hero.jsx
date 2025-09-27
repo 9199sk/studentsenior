@@ -1,9 +1,7 @@
-import student from "../assets/student.png";
 import { useEffect, useRef } from 'react'; // Import hooks if you want a trigger animation
 
 const HeroSection = () => {
-    // Note: I removed the unused import 'student' which you had previously, 
-    // as the image path is hardcoded as a string later.
+
 
     return (
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 transition-colors dark:from-gray-900 dark:to-gray-800">
@@ -55,7 +53,7 @@ const HeroSection = () => {
                     {/* 4. Optional: Fade-in for the Image */}
                     <div className="flex-1 opacity-0 animate-fadeInUp-3" style={{ animationFillMode: 'forwards' }}>
                         <img
-                            src="/src/assets/student.png"
+                            src="/image/student.png"
                             alt="Students studying"
                             className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto dark:opacity-90 transition-opacity"
                         />
